@@ -4,8 +4,9 @@ import { Typewriter } from "react-simple-typewriter";
 import Header from "@/components/Header";
 import Link from "next/link";
 import Footer from "@/components/Footer";
-import profile from "@/image/profile.png"
+import profile from "@/image/profile.png";
 import Image from "next/image";
+
 export default function Home() {
   const downloadFile = () => {
     const link = document.createElement("a");
@@ -60,10 +61,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center items-center">
             <div className="flex items-center justify-center w-80 h-80 rounded-full ring-1 ring-inset ring-black hover:border-2 hover:border-black animate-slidein2">
-              <Image
-                src={profile}
-                alt="Profile Image"
-              />
+              <Image src={profile} alt="Profile Image" />
             </div>
           </div>
         </div>
@@ -77,7 +75,11 @@ export default function Home() {
               <h1 className="font-semibold text-xl text-highlight">
                 Order Now
               </h1>
-              <span>LINK</span>
+              <span>
+                <Link href={"https://github.com/sandeep002-Hidden/Food-Order"}>
+                  LINK
+                </Link>
+              </span>
             </div>
             <div className="text-xl text-zinc-950">
               Tech Stack ▶️ React js,Express js,MongoDB,Node js<span></span>
@@ -99,7 +101,14 @@ export default function Home() {
               <h1 className="font-semibold text-xl text-highlight">
                 Steller Forge
               </h1>
-              <span>LINK</span>
+              <span>
+                {" "}
+                <Link
+                  href={"https://github.com/sandeep002-Hidden/stellerForge"}
+                >
+                  LINK
+                </Link>
+              </span>
             </div>
             <div>
               <h1 className="text-xl text-zinc-950">
@@ -118,20 +127,25 @@ export default function Home() {
                 collaborative and engaging student community.
               </p>
             </div>
-            
           </div>
           <div className="w-9/12 my-4">
             <div className="flex justify-between items-center">
               <h1 className="font-semibold text-xl text-highlight">
                 Tic-Tac-Toe Multiplayer Game
               </h1>
-              <span>LINK</span>
+              <span>
+                {" "}
+                <Link href={"https://github.com/sandeep002-Hidden/TictacToeMP"}>
+                  LINK
+                </Link>
+              </span>
             </div>
             <div>
-            <h1 className="text-xl text-zinc-950">
-            Tech stack ▶️ Next.js,tailwind,TypeScript,JWT,Socket.io,</h1>
-            <p className="text-justify my-2 text-emerald-900">
-            The project aims to create a platform in which one can play
+              <h1 className="text-xl text-zinc-950">
+                Tech stack ▶️ Next.js,tailwind,TypeScript,JWT,Socket.io,
+              </h1>
+              <p className="text-justify my-2 text-emerald-900">
+                The project aims to create a platform in which one can play
                 Tic-tac-Toe game with his friend , with people ground globe,or
                 may with computer. Next.js and tailwind provides semless ui to
                 and give the best user Experience while
@@ -143,13 +157,19 @@ export default function Home() {
               <h1 className="font-semibold text-xl text-highlight">
                 Search Engine
               </h1>
-              <span>LINK</span>
+              <span>
+                {" "}
+                <Link href={"https://github.com/sandeep002-Hidden/search002"}>
+                  LINK
+                </Link>
+              </span>
             </div>
             <div>
-            <h1 className="text-xl text-zinc-950">
-            Tech stack ▶️ Python,Flask,SqlLite</h1>
-            <p className="text-justify my-2 text-emerald-900">
-            This search engine, built with Flask, Python, and SQLite,
+              <h1 className="text-xl text-zinc-950">
+                Tech stack ▶️ Python,Flask,SqlLite
+              </h1>
+              <p className="text-justify my-2 text-emerald-900">
+                This search engine, built with Flask, Python, and SQLite,
                 provides a fast and efficient platform for retrieving and
                 displaying information. Users can enter search queries and
                 receive relevant results in a user-friendly interface,
@@ -163,13 +183,19 @@ export default function Home() {
               <h1 className="font-semibold text-xl text-highlight">
                 Next.js Authentication
               </h1>
-              <span>LINK</span>
+              <span>
+                {" "}
+                <Link href={"https://github.com/sandeep002-Hidden/nextAuth"}>
+                  LINK
+                </Link>
+              </span>
             </div>
             <div>
-            <h1 className="text-xl text-zinc-950">
-            Tech stack ▶️ Next.js,MongoDB,JWT,Typescript,Nodemailer</h1>
-            <p className="text-justify my-2 text-emerald-900">
-            This Next.js authentication app uses MongoDB, JWT, TypeScript,
+              <h1 className="text-xl text-zinc-950">
+                Tech stack ▶️ Next.js,MongoDB,JWT,Typescript,Nodemailer
+              </h1>
+              <p className="text-justify my-2 text-emerald-900">
+                This Next.js authentication app uses MongoDB, JWT, TypeScript,
                 and Nodemailer to provide secure user registration and login.
                 JWT handles authentication, while MongoDB stores user data.
                 Nodemailer is used for sending verification emails and password
