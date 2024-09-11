@@ -1,101 +1,186 @@
+"use client";
+import React from "react";
+import { Typewriter } from "react-simple-typewriter";
+import Header from "@/components/Header";
+import Link from "next/link";
+import Footer from "@/components/Footer";
+import profile from "@/image/profile.png"
 import Image from "next/image";
-
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const downloadFile = () => {
+    const link = document.createElement("a");
+    link.href = "/path-to-your-resume.pdf"; // Update this path to your actual file
+    link.download = "Sandeep_Mohapatra_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  return (
+    <>
+      <Header />
+      <>
+        <div className="h-fit w-full flex flex-col-reverse md:flex-row md:h-screen justify-evenly items-center font-serif">
+          <div className="w-full flex justify-center md:w-1/2 items-center flex-wrap">
+            <div className="w-full md:w-1/2 h-auto text-left">
+              <div className="text-2xl font-bold animate-slidein2 flex justify-center items-center flex-col">
+                <div className="text-left">Hey 👋, I am </div>
+                <div className="text-3xl text-purple-600 text-nowrap">
+                  Sandeep Mohapatra
+                </div>
+                <div className="text-nowrap">and I am passionate about</div>
+                <div className="w-full h-min text-nowrap">
+                  <Typewriter
+                    words={[
+                      " Web Development",
+                      "Problem Solving",
+                      "Machine Learning",
+                    ]}
+                    loop={false}
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={100}
+                    deleteSpeed={60}
+                    delaySpeed={1000}
+                  />
+                </div>
+              </div>
+              <div className="h-full flex justify-center items-center">
+                <button className="inline-flex items-center rounded-md px-2 py-1 text-sm md:text-xl text-purple-600 font-bold mr-2 hover:text-xl hover:border-2 hover:border-black animate-slidein2">
+                  <Link href="./Contact-me">Get in Touch</Link>
+                </button>
+                <button
+                  className="inline-flex items-center rounded-md px-2 py-1 text-sm md:text-xl text-purple-600 font-bold hover:text-xl hover:border-2 hover:border-black animate-slidein2"
+                  onClick={downloadFile}
+                >
+                  Download Resume
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center items-center">
+            <div className="flex items-center justify-center w-80 h-80 rounded-full ring-1 ring-inset ring-black hover:border-2 hover:border-black animate-slidein2">
+              <Image
+                src={profile}
+                alt="Profile Image"
+              />
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <div className="animate-slidein3 font-serif text-lg leading-8 flex justify-center items-center flex-col">
+          <div className="w-10/12 text-6xl font-semibold">
+            Projects<span className="text-highlight text-6xl">.</span>
+          </div>
+          <div className="w-9/12 my-12">
+            <div className="flex justify-between items-center">
+              <h1 className="font-semibold text-xl text-highlight">
+                Order Now
+              </h1>
+              <span>LINK</span>
+            </div>
+            <div className="text-xl text-zinc-950">
+              Tech Stack ▶️ React js,Express js,MongoDB,Node js<span></span>
+            </div>
+            <div>
+              <p className="text-justify my-2 text-emerald-900">
+                This MERN stack-based food delivery website offers a dynamic
+                platform for online food ordering. It includes user
+                authentication for profile management and saved addresses. Users
+                can search items and can add to their cart for secure checkout.
+                Real-time order tracking enhances the experience, providing a
+                seamless and efficient food delivery process from start to
+                finish.
+              </p>
+            </div>
+          </div>
+          <div className="w-9/12 my-4">
+            <div className="flex justify-between items-center">
+              <h1 className="font-semibold text-xl text-highlight">
+                Steller Forge
+              </h1>
+              <span>LINK</span>
+            </div>
+            <div>
+              <h1 className="text-xl text-zinc-950">
+                Tech stack ▶️ HTML,CSS,Tailwind, EJS, Javascript, Multer,
+                MongoDB, Express js, Socket.io, Multer
+              </h1>
+              <p className="text-justify my-2 text-emerald-900">
+                This project is a dynamic online platform for student
+                collaboration, built using HTML, CSS, Tailwind, EJS, JavaScript,
+                Multer, MongoDB, and Express.js. It enables global students to
+                connect, form groups, and collaborate on projects with real-time
+                chat powered by "socket.io." Tailwind ensures a responsive UI,
+                while JavaScript enhances project search and filtering. Multer
+                handles file uploads, and MongoDB with Express.js provides a
+                strong backend for user and project management, fostering a
+                collaborative and engaging student community.
+              </p>
+            </div>
+            
+          </div>
+          <div className="w-9/12 my-4">
+            <div className="flex justify-between items-center">
+              <h1 className="font-semibold text-xl text-highlight">
+                Tic-Tac-Toe Multiplayer Game
+              </h1>
+              <span>LINK</span>
+            </div>
+            <div>
+            <h1 className="text-xl text-zinc-950">
+            Tech stack ▶️ Next.js,tailwind,TypeScript,JWT,Socket.io,</h1>
+            <p className="text-justify my-2 text-emerald-900">
+            The project aims to create a platform in which one can play
+                Tic-tac-Toe game with his friend , with people ground globe,or
+                may with computer. Next.js and tailwind provides semless ui to
+                and give the best user Experience while
+              </p>
+            </div>
+          </div>
+          <div className="w-9/12 my-4">
+            <div className="flex justify-between items-center">
+              <h1 className="font-semibold text-xl text-highlight">
+                Search Engine
+              </h1>
+              <span>LINK</span>
+            </div>
+            <div>
+            <h1 className="text-xl text-zinc-950">
+            Tech stack ▶️ Python,Flask,SqlLite</h1>
+            <p className="text-justify my-2 text-emerald-900">
+            This search engine, built with Flask, Python, and SQLite,
+                provides a fast and efficient platform for retrieving and
+                displaying information. Users can enter search queries and
+                receive relevant results in a user-friendly interface,
+                showcasing the seamless integration of Python and a relational
+                database for smooth search functionality.
+              </p>
+            </div>
+          </div>
+          <div className="w-9/12 my-4">
+            <div className="flex justify-between items-center">
+              <h1 className="font-semibold text-xl text-highlight">
+                Next.js Authentication
+              </h1>
+              <span>LINK</span>
+            </div>
+            <div>
+            <h1 className="text-xl text-zinc-950">
+            Tech stack ▶️ Next.js,MongoDB,JWT,Typescript,Nodemailer</h1>
+            <p className="text-justify my-2 text-emerald-900">
+            This Next.js authentication app uses MongoDB, JWT, TypeScript,
+                and Nodemailer to provide secure user registration and login.
+                JWT handles authentication, while MongoDB stores user data.
+                Nodemailer is used for sending verification emails and password
+                recovery links, ensuring a safe and seamless experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </>
+
+      <Footer />
+    </>
   );
 }
