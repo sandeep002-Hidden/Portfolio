@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function Home() {
   const downloadFile = () => {
     const link = document.createElement("a");
-    link.href = "https://drive.google.com/file/d/12xuGdYZ1XMOfGrL2LtyHatba88Va3tVc/view?usp=drive_link";
+    link.href = "https://drive.google.com/file/d/1ebhMydAAC8Mgwq648iPtqvmG1rSxDCZV/view?usp=drive_link";
     link.download = "Sandeep_Mohapatra_Resume.pdf";
     document.body.appendChild(link);
     link.click();
