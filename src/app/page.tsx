@@ -48,13 +48,13 @@ export default function Home() {
               </div>
               <div className="h-full flex justify-center items-center">
                 <button className="inline-flex items-center rounded-md px-2 py-1 text-sm md:text-xl text-purple-600 font-bold mr-2 hover:text-xl hover:border-2 hover:border-black animate-slidein2">
-                  <Link href="./Contact-me">Get in Touch</Link>
+                  <Link href="./connectwme">Get in Touch</Link>
                 </button>
                 <button
                   className="inline-flex items-center rounded-md px-2 py-1 text-sm md:text-xl text-purple-600 font-bold hover:text-xl hover:border-2 hover:border-black animate-slidein2"
                   onClick={downloadFile}
                 >
-                  Download Resume
+                  My Resume
                 </button>
               </div>
             </div>
