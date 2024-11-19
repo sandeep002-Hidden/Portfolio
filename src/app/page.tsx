@@ -30,10 +30,10 @@ export default function Home() {
                   Sandeep Mohapatra
                 </div>
                 <div className="text-nowrap">and I am passionate about</div>
-                <div className="w-full h-min text-nowrap">
+                <div className="h-min text-nowrap sm:w-full">
                   <Typewriter
                     words={[
-                      " Web Development",
+                      "Web Development",
                       "Problem Solving",
                       "Machine Learning",
                     ]}
