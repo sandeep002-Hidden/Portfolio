@@ -11,8 +11,8 @@ export default function AboutMe() {
       <div className="animate-slidein3">
         <div className="h-max w-full flex items-center my-4 ">
           <span className="inline-block h-40 w-2 ml-12 rounded-lg bg-purple-700 sm:h-24 md:h-22"></span>
-          <span className="inline-block h-fit ml-4 text-center text-base w-11/12 md:text-xl bg-cyan-200">
-            <div className="text-justify bg-red-200 w-5/6">
+          <span className="inline-block h-fit ml-4 text-center text-base w-11/12 md:text-xl">
+            <div className="text-justify  w-5/6">
               Hello !! 👋🏼 <span className=" text-highlight">,</span>I am{" "}
               <span className="text-highlight font-bold">
                 Sandeep Mohapatra{" "}
