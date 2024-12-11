@@ -9,10 +9,10 @@ export default function AboutMe() {
       </div>
 
       <div className="animate-slidein3">
-        <div className="h-max w-full flex items-center my-4 ">
+        <div className="h-max w-full flex items-center my-4 " style={{width:'90%'}}>
           <span className="inline-block h-40 w-2 ml-12 rounded-lg bg-purple-700 sm:h-24 md:h-22"></span>
-          <span className="inline-block h-fit ml-4 text-center text-base w-11/12 md:text-xl">
-            <div className="text-justify  w-5/6">
+          <span className="inline-block h-fit ml-4 text-justify text-base w-11/12 md:text-xl">
+            {/* <div className="text-justify  w-5/6"> */}
               Hello !! 👋🏼 <span className=" text-highlight">,</span>I am{" "}
               <span className="text-highlight font-bold">
                 Sandeep Mohapatra{" "}
@@ -22,11 +22,11 @@ export default function AboutMe() {
               world of professional development, I am eager to dive head first
               into the exciting realm of Full Stack Development.
               <span className=" text-highlight">.</span>
-              <div></div>
-            </div>
+              {/* <div></div>
+            </div> */}
           </span>
         </div>
-        <div className="h-max w-full flex items-center my-4">
+        <div className="h-max w-full flex items-center my-4 " style={{width:'90%'}}>
           <span className="inline-block h-12 w-2 ml-12 rounded-lg bg-purple-700 sm:h-8 md:h-10"></span>
           <span className="inline-block h-fit ml-4 text-center text-base w-11/12 md:text-xl">
             <div className="text-left sm:w-4/5">
@@ -38,7 +38,7 @@ export default function AboutMe() {
             <div></div>
           </span>
         </div>
-        <div className="h-max w-full flex items-center my-4">
+        <div className="h-max w-full flex items-center my-4 " style={{width:'90%'}}>
           <span className="inline-block h-40 w-2 ml-12 rounded-lg bg-purple-700 sm:h-24 md:h-20"></span>
           <span className="inline-block h-fit ml-4 text-center text-base w-11/12 md:text-xl">
             <div className="sm:w-4/5 text-justify">
@@ -52,14 +52,13 @@ export default function AboutMe() {
             <div></div>
           </span>
         </div>
-        <div className="h-max w-full flex items-center my-4">
+        <div className="h-max w-full flex items-center my-4" style={{width:'90%'}}>
           <span className="inline-block h-44 w-2 ml-12 rounded-lg bg-purple-700 sm:h-24 md:h-20 "></span>
           <span className="inline-block h-fit ml-4 text-center text-base w-11/12 md:text-xl">
             <div className="sm:w-4/5  text-justify">
-               I am dedicated to
-              continuous learning and improvement. I am currently exploring
-              web3 and App devlopment using React Native. I am
-              excited about the possibilities they offer for building dynamic
+              I am dedicated to continuous learning and improvement. I am
+              currently exploring web3 and App devlopment using React Native. I
+              am excited about the possibilities they offer for building dynamic
               and responsive web applications.
               <span className=" text-highlight">.</span>
             </div>
