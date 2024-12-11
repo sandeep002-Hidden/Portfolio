@@ -41,7 +41,7 @@ export default function AboutMe() {
         <div className="h-max w-full flex items-center my-4 " style={{width:'90%'}}>
           <span className="inline-block h-40 w-2 ml-12 rounded-lg bg-purple-700 sm:h-24 md:h-20"></span>
           <span className="inline-block h-fit ml-4 text-center text-base w-11/12 md:text-xl">
-            <div className="sm:w-4/5 text-justify">
+            <div className="text-justify">
               My journey into the world of coding began with a curiosity for
               technology and a desire to create impactful solutions. Over time,
               I have taught myself various programming languages , frameworks,
@@ -55,7 +55,7 @@ export default function AboutMe() {
         <div className="h-max w-full flex items-center my-4" style={{width:'90%'}}>
           <span className="inline-block h-44 w-2 ml-12 rounded-lg bg-purple-700 sm:h-24 md:h-20 "></span>
           <span className="inline-block h-fit ml-4 text-center text-base w-11/12 md:text-xl">
-            <div className="sm:w-4/5  text-justify">
+            <div className="  text-justify">
               I am dedicated to continuous learning and improvement. I am
               currently exploring web3 and App devlopment using React Native. I
               am excited about the possibilities they offer for building dynamic
