@@ -26,42 +26,46 @@ export default function Projects() {
           <div className="h-max text-2xl font-semibold">
             Ord<span className="text-2xl text-purple-600">e</span>r Now
           </div>
-          <div className="p-12 flex items-center justify-around sticky top-0 flex-col md:flex-row bg-slate-100 rounded-3xl">
-            <Image
-              src={on1}
-              alt="Steller Forge"
-              className="w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
-            />
+          <div className="p-6 sm:p-12 flex flex-col md:flex-row items-center justify-around sticky top-0 bg-slate-100 rounded-3xl gap-6 md:gap-0">
+  <Image
+    src={on1}
+    alt="Steller Forge"
+    className="w-3/4 sm:w-1/2 md:w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
+  />
 
-            <Image
-              src={on2}
-              alt="Steller Forge"
-              className="w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
-            />
-            <Image
-              src={on3}
-              alt="Steller Forge"
-              className="w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
-            />
-          </div>
-          <div className="p-12 flex items-center justify-around sticky top-0 flex-col md:flex-row bg-slate-100 rounded-3xl">
-            <Image
-              src={on4}
-              alt="Steller Forge"
-              className="w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
-            />
+  <Image
+    src={on2}
+    alt="Steller Forge"
+    className="w-3/4 sm:w-1/2 md:w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
+  />
+  
+  <Image
+    src={on3}
+    alt="Steller Forge"
+    className="w-3/4 sm:w-1/2 md:w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
+  />
+</div>
 
-            <Image
-              src={on5}
-              alt="Steller Forge"
-              className="w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
-            />
-            <Image
-              src={on6}
-              alt="Steller Forge"
-              className="w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
-            />
-          </div>
+<div className="p-6 sm:p-12 flex flex-col md:flex-row items-center justify-around sticky top-0 bg-slate-100 rounded-3xl gap-6 md:gap-0">
+  <Image
+    src={on4}
+    alt="Steller Forge"
+    className="w-3/4 sm:w-1/2 md:w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
+  />
+
+  <Image
+    src={on5}
+    alt="Steller Forge"
+    className="w-3/4 sm:w-1/2 md:w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
+  />
+  
+  <Image
+    src={on6}
+    alt="Steller Forge"
+    className="w-3/4 sm:w-1/2 md:w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
+  />
+</div>
+
           <div className="h-fit text-justify text-emerald-800 p-8">
             A food delivery website built using the MERN stack (MongoDB,
             Express, React, Node.js) offers a comprehensive and dynamic platform
@@ -93,24 +97,26 @@ export default function Projects() {
             Tic-Tac-To<span className="text-2xl text-purple-600">e</span>{" "}
             Multiplayer Game.
           </div>
-          <div className="p-12 flex items-center justify-around sticky top-0 flex-col md:flex-row bg-slate-100 rounded-3xl">
-            <Image
-              src={ttt1}
-              alt="Steller Forge"
-              className="w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
-            />
+          <div className="p-6 sm:p-12 flex flex-col md:flex-row items-center justify-around sticky top-0 bg-slate-100 rounded-3xl gap-6 md:gap-0">
+  <Image
+    src={ttt1}
+    alt="Steller Forge"
+    className="w-3/4 sm:w-1/2 md:w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
+  />
 
-            <Image
-              src={ttt2}
-              alt="Steller Forge"
-              className="w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
-            />
-            <Image
-              src={ttt3}
-              alt="Steller Forge"
-              className="w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
-            />
-          </div>
+  <Image
+    src={ttt2}
+    alt="Steller Forge"
+    className="w-3/4 sm:w-1/2 md:w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
+  />
+  
+  <Image
+    src={ttt3}
+    alt="Steller Forge"
+    className="w-3/4 sm:w-1/2 md:w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
+  />
+</div>
+
           <div className="h-fit text-justify text-emerald-800 p-8">
             The project aims to create a platform in which one can play
             Tic-tac-Toe game with his friend , with people ground globe,or may
@@ -125,24 +131,26 @@ export default function Projects() {
             St<span className="text-2xl text-purple-600">e</span>llar Forg
             <span className="text-2xl text-purple-600">e</span>
           </div>
-          <div className="p-12 flex items-center justify-around sticky top-0 flex-col md:flex-row bg-slate-100 rounded-3xl">
-            <Image
-              src={steller1}
-              alt="Steller Forge"
-              className="w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
-            />
+          <div className="p-6 sm:p-12 flex flex-col md:flex-row items-center justify-around sticky top-0 bg-slate-100 rounded-3xl gap-6 md:gap-0">
+  <Image
+    src={steller1}
+    alt="Steller Forge"
+    className="w-3/4 sm:w-1/2 md:w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
+  />
 
-            <Image
-              src={sfLogin}
-              alt="Steller Forge"
-              className="w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
-            />
-            <Image
-              src={sfProfile}
-              alt="Steller Forge"
-              className="w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
-            />
-          </div>
+  <Image
+    src={sfLogin}
+    alt="Steller Forge"
+    className="w-3/4 sm:w-1/2 md:w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
+  />
+  
+  <Image
+    src={sfProfile}
+    alt="Steller Forge"
+    className="w-3/4 sm:w-1/2 md:w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
+  />
+</div>
+
           <div className="h-fit text-justify text-emerald-800 p-8">
             The project is designed to create an online integrated platform for
             student projects, utilizing a tech stack of HTML, CSS, Tailwind,
@@ -168,20 +176,20 @@ export default function Projects() {
             Stock Tr<span className="text-2xl text-purple-600">e</span>nd Pr
             <span className="text-2xl text-purple-600">e</span>dection
           </div>
-          <div className="p-12 flex items-center justify-around sticky top-0 flex-col md:flex-row bg-slate-100 rounded-3xl">
-            <Image
-              src={st1}
-              alt="Steller Forge"
-              className="w-1/3 hover:scale-150 transition-transform duration-500 ease-in-out"
-            />
+          <div className="p-6 sm:p-12 flex flex-col md:flex-row items-center justify-around sticky top-0 bg-slate-100 rounded-3xl gap-6 md:gap-0">
+  <Image
+    src={st1}
+    alt="Steller Forge"
+    className="w-3/4 sm:w-1/2 md:w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
+  />
 
-            <Image
-              src={st2}
-              alt="Steller Forge"
-              className="w-1/3 hover:scale-150 transition-transform duration-500 ease-in-out"
-            />
-            
-          </div>
+  <Image
+    src={st2}
+    alt="Steller Forge"
+    className="w-3/4 sm:w-1/2 md:w-1/4 hover:scale-150 transition-transform duration-500 ease-in-out"
+  />
+</div>
+
           <div className="h-fit text-justify text-emerald-800 p-8">
             The stock trend prediction project utilizes machine learning
             techniques to forecast future stock prices based on historical data.
